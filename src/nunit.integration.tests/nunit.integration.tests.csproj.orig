@@ -255,13 +255,13 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>SupportPlatforms.feature</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="RunTests.feature.cs">
       <DependentUpon>RunTests.feature</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
+=======
     <Compile Include="TeamCityForNUnitlite.feature.cs">
       <DependentUpon>TeamCityForNUnitlite.feature</DependentUpon>
+>>>>>>> #1 Handling of TeamCity messages is different between the engine and nunitlite - add tests for nunitlite
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
@@ -305,13 +305,15 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>SupportPlatforms.feature.cs</LastGenOutput>
     </None>
-    <None Include="TeamCityForNUnitlite.feature">
-      <Generator>SpecFlowSingleFileGenerator</Generator>
-      <LastGenOutput>TeamCityForNUnitlite.feature.cs</LastGenOutput>
-    </None>
+<<<<<<< HEAD
     <None Include="RunTests.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>RunTests.feature.cs</LastGenOutput>
+=======
+    <None Include="TeamCityForNUnitlite.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>TeamCityForNUnitlite.feature.cs</LastGenOutput>
+>>>>>>> #1 Handling of TeamCity messages is different between the engine and nunitlite - add tests for nunitlite
     </None>
     <None Include="TeamCity.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>

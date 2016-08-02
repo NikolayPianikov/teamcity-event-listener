@@ -42,6 +42,7 @@ namespace NUnit.Engine.Listeners
     public class TeamCityEventListener : ITestEventListener
     {
         private static readonly ServiceMessageWriter ServiceMessageWriter = new ServiceMessageWriter();
+        private readonly TeamCityMessageConverter _messageConverter = new TeamCityMessageConverter();
         private readonly TextWriter _outWriter;
         private readonly Dictionary<string, string> _refs = new Dictionary<string, string>();
         private readonly Dictionary<string, int> _blockCounters = new Dictionary<string, int>();
@@ -63,137 +64,26 @@ namespace NUnit.Engine.Listeners
             doc.LoadXml(report);
 
             var testEvent = doc.FirstChild;
-            RegisterMessage(testEvent);
+
+            TeamCityMessageConverter.NUnitMessage message;
+            if (!TeamCityMessageConverter.NUnitMessage.TryParse(testEvent, out message))
+            {
+                return;
+            }
+
+            var sb = new StringBuilder();
+            using (var writer = new StringWriter(sb))
+            {
+                foreach (var tcMessage in _messageConverter.ConvertMessage(message))
+                {
+                    ServiceMessageWriter.Write(writer, tcMessage);
+                }
+            }
+
+            _outWriter.WriteLine(sb.ToString());
         }
 
         #endregion
-
-        public void RegisterMessage(XmlNode testEvent)
-        {
-            if (testEvent == null) throw new ArgumentNullException("testEvent");
-
-            var messageName = testEvent.Name;
-            if (string.IsNullOrEmpty(messageName))
-            {
-                return;
-            }
-
-            messageName = messageName.ToLowerInvariant();
-            if (messageName == "start-run")
-            {
-                _refs.Clear();
-                return;
-            }
-
-            var fullName = testEvent.GetAttribute("fullname");
-            if (string.IsNullOrEmpty(fullName))
-            {
-                return;
-            }
-
-            var id = testEvent.GetAttribute("id");
-            if (id == null)
-            {
-                id = string.Empty;
-            }
-
-            var parentId = testEvent.GetAttribute("parentId");
-            var flowId = ".";
-            if (parentId != null)
-            {
-                // NUnit 3 case
-                string rootId;
-                flowId = TryFindRootId(parentId, out rootId) ? rootId : id;
-            }
-            else
-            {
-                // NUnit 2 case
-                if (!string.IsNullOrEmpty(id))
-                {
-                    var idParts = id.Split('-');
-                    if (idParts.Length == 2)
-                    {
-                        flowId = idParts[0];
-                    }
-                }
-            }
-
-            string testFlowId;
-            if (id != flowId && parentId != null)
-            {
-                testFlowId = id;
-            }
-            else
-            {
-                testFlowId = flowId;
-                if (testFlowId == null)
-                {
-                    testFlowId = id;
-                }
-            }
-
-            switch (messageName.ToLowerInvariant())
-            {
-                case "start-suite":
-                    _refs[id] = parentId;
-                    StartSuiteCase(parentId, flowId, fullName);
-                    break;
-
-                case "test-suite":
-                    _refs.Remove(id);
-                    TestSuiteCase(parentId, flowId, fullName);
-                    break;
-
-                case "start-test":
-                    _refs[id] = parentId;
-                    CaseStartTest(id, flowId, parentId, testFlowId, fullName);
-                    break;
-
-                case "test-case":
-                    try
-                    {
-                        if (!_refs.Remove(id))
-                        {
-                            // When test without starting
-                            CaseStartTest(id, flowId, parentId, testFlowId, fullName);
-                        }
-
-                        var result = testEvent.GetAttribute("result");
-                        if (string.IsNullOrEmpty(result))
-                        {
-                            break;
-                        }
-
-                        switch (result.ToLowerInvariant())
-                        {
-                            case "passed":
-                                OnTestFinished(testFlowId, testEvent, fullName);
-                                break;
-
-                            case "inconclusive":
-                                OnTestInconclusive(testFlowId, testEvent, fullName);
-                                break;
-
-                            case "skipped":
-                                OnTestSkipped(testFlowId, testEvent, fullName);
-                                break;
-
-                            case "failed":
-                                OnTestFailed(testFlowId, testEvent, fullName);
-                                break;
-                        }
-                    }
-                    finally
-                    {
-                        if (id != flowId && parentId != null)
-                        {
-                            OnFlowFinished(id);
-                        }
-                    }
-
-                    break;
-            }
-        }
 
         private void CaseStartTest(string id, string flowId, string parentId, string testFlowId, string fullName)
         {
@@ -282,7 +172,7 @@ namespace NUnit.Engine.Listeners
 
         private void TrySendOutput(string flowId, XmlNode message, string fullName)
         {
-            if (message == null) throw new ArgumentNullException("message");            
+            if (message == null) throw new ArgumentNullException("message");
 
             var output = message.SelectSingleNode("output");
             if (output == null)
@@ -415,15 +305,6 @@ namespace NUnit.Engine.Listeners
                 new ServiceMessageAttr(ServiceMessageAttr.Names.FlowId, flowId)));            
         }
 
-        private void Write(ServiceMessage serviceMessage)
-        {
-            var sb = new StringBuilder();
-            using (var writer = new StringWriter(sb))
-            {
-                ServiceMessageWriter.Write(writer, serviceMessage);                
-            }
-            
-            _outWriter.WriteLine(sb.ToString());
-        }
+        
     }
 }

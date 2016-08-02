@@ -233,6 +233,16 @@
             ctx.TestSession = testSession;            
         }
 
+        [When(@"I run (.+)")]
+        public void Run(string executable)
+        {
+            var ctx = ScenarioContext.Current.GetTestContext();
+            var runner = new NUnitRunner();
+            ICommandLineSetupFactory setupFactory = new GenericCommandLineSetupFactory(executable);
+            var testSession = runner.Run(ctx, setupFactory.Create(ctx));
+            ctx.TestSession = testSession;
+        }
+
         [Then(@"processes (.+) are finished")]
         public void CheckProcessesWereFinished(string processName)
         {

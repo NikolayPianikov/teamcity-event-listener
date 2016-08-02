@@ -11,14 +11,15 @@
     [TestFixture]
     internal class UnitTest
     {
+<<<<<<< HEAD
         public void ThrowException()
         {
             throw new System.Exception("Exception");
-        }
-
+=======
         public static int NUnitLiteEntryPoint(string[] args)
         {
-            return new NUnitLite.AutoRun(typeof(Program).Assembly).Execute(args, new NUnit.Common.ExtendedTextWrapper(Console.Out), Console.In);
+            return new NUnitLite.AutoRun(typeof(Program).Assembly).Execute(args, new NUnit.Common.ExtendedTextWrapper(Console.Out), Console.In);            
+>>>>>>> #1 Handling of TeamCity messages is different between the engine and nunitlite - add tests for nunitlite
         }
 
         [SetUp]

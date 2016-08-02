@@ -37,6 +37,7 @@
         public IEnumerable<string> EnumerateNUnitAssemblies(string nunitBasePath, TargetDotNetFrameworkVersion frameworkVersion)
         {
             yield return GetNUnitFrameworkPath(nunitBasePath, frameworkVersion, "nunit.framework.dll");
+            yield return GetNUnitFrameworkPath(nunitBasePath, frameworkVersion, "nunitlite.dll");
             var file = GetNUnitFrameworkPath(nunitBasePath, frameworkVersion, "NUnit.System.Linq.dll");
             if (file != null)
             {

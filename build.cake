@@ -177,7 +177,7 @@ Task("InitializeForIntegrationTests")
 		CleanDirectories(TEST_NUNIT_DIR + "**/*.*");
 		CleanDirectories(TEST_PACKAGES_DIR + "**/*.*");		
 
-		NuGetInstall(new [] {"NUnit.Runners", "NUnit"}, new NuGetInstallSettings()
+		NuGetInstall(new [] {"NUnit.Runners", "NUnit", "NUnitLite"}, new NuGetInstallSettings()
         {
 			OutputDirectory = TEST_NUNIT_DIR,
             Source = PRERELEASE_PACKAGE_SOURCE,

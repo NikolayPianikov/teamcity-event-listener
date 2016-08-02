@@ -41,6 +41,9 @@
                     break;
             }
 
+<<<<<<< HEAD
+            var assemblyInfoSyntaxTree = CSharpSyntaxTree.ParseText(ResourceManager.GetContentFromResource(AssemblyInfoResourceName) + Environment.NewLine + string.Join(Environment.NewLine, testAssembly.Attributes));
+=======
             var outputKind = OutputKind.DynamicallyLinkedLibrary;
             switch (Path.GetExtension(assemblyFileName)?.ToLowerInvariant())
             {
@@ -50,6 +53,7 @@
             }
 
             var assemblyInfoSyntaxTree = CSharpSyntaxTree.ParseText(ResourceManager.GetContentFromResource(AssemblyInfoResourceName) + Environment.NewLine + string.Join(Environment.NewLine, testAssembly.Attributes));            
+>>>>>>> #1 Handling of TeamCity messages is different between the engine and nunitlite - add tests for nunitlite
             var compilation =
                 CSharpCompilation.Create(Path.GetFileName(assemblyFileName))
                     .WithOptions(new CSharpCompilationOptions(outputKind)
