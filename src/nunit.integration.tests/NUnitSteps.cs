@@ -4,8 +4,12 @@
     using System.Collections.Generic;
     using System.IO;
     using System.Linq;
+    using System.Xml.Linq;
+    using System.Xml.XPath;
 
     using Dsl;
+
+    using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 
     using NUnit.Framework;
     using TechTalk.SpecFlow;
@@ -302,6 +306,46 @@
             {
                 Assert.Fail($"See {ctx}\n{string.Join("\n", errorMessages)}");
             }
+        }
+
+        [Given(@"I have created assemblies according to (.+) in the folder (.+)")]
+        public void CreateAssemblies(string xmlReportFileName, string targetDirectoryName)
+        {
+            var ctx = ScenarioContext.Current.GetTestContext();
+            var configuration = ctx.GetOrCreateNUnitConfiguration();
+            xmlReportFileName = Path.Combine(ctx.SandboxPath, xmlReportFileName);
+            targetDirectoryName = Path.Combine(ctx.SandboxPath, targetDirectoryName);
+
+            using (var xmlReportFile = File.OpenRead(xmlReportFileName))
+            {
+                var doc = XDocument.Load(xmlReportFile);
+                var a =
+                    from assemblyElement in doc.XPathSelectElements("//test-suite[@type='Assembly' and @name]")
+                    let assemblyName = Path.GetFileName(assemblyElement.Attribute("name").Value)
+                    from testFixtureElement in assemblyElement.XPathSelectElements(".//test-suite[@type='TestFixture' and @name]")
+                    let namespaceStr = GetNamespace(testFixtureElement)
+                    let зфк = GetNamespace(testFixtureElement)
+                    select assemblyName;
+
+                var b = a.ToList();
+            }
+        }
+
+        private IEnumerable<string> GetNamespace(XElement testFixtureElement)
+        {
+            var parent = testFixtureElement.Parent;
+            if (parent == null)
+            {
+                yield break;
+            }
+
+            if (parent.Name == "test-suite")
+            {
+                
+            }
+
+            var parent = testFixtureElement.XPathSelectElement("parent::parent::test-suite[@type='Namespace' and @name]");
+            return "";
         }
     }
 }

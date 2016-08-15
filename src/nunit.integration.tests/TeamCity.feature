@@ -266,3 +266,16 @@ Examples:
 	| frameworkVersion |
 	| Version45        |
 	| Version40        |
+
+@teamcity
+Scenario Outline: NUnit sends TeamCity's service messages
+	Given Framework version is <frameworkVersion>
+	And I have created assemblies according to ..\..\..\testsData\TestResult1.xml in the folder mocks
+	And I have created the folder mocks
+	And I have added the assembly mocks\MAP.Common.Test.dll to the list of testing assemblies
+	And I want to use CmdArguments type of TeamCity integration
+	When I run NUnit console
+	Then the exit code should be 0
+Examples:
+	| frameworkVersion |
+	| Version45        |

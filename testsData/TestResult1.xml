@@ -1,0 +1,908 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\jukloc-he\Development\SPF\eSP\MAP.Common.Test\bin\Release\MAP.Common.Test.dll" total="345" errors="0" failures="0" not-run="11" inconclusive="0" ignored="11" skipped="0" invalid="0" date="2016-08-02" time="15:17:38">
+  <environment nunit-version="2.6.3.13283" clr-version="2.0.50727.8689" os-version="Microsoft Windows NT 6.2.9200.0" platform="Win32NT" cwd="C:\Users\jukloc-he\Development\SPF\eSP" machine-name="HE148507" user="jukloc-he" user-domain="HELSEMN" />
+  <culture-info current-culture="nb-NO" current-uiculture="en-US" />
+  <test-suite type="Test Project" name="" executed="True" result="Success" success="True" time="5.428" asserts="0">
+    <results>
+      <test-suite type="Assembly" name="C:\Users\jukloc-he\Development\SPF\eSP\MAP.Common.Test\bin\Release\MAP.Common.Test.dll" executed="True" result="Success" success="True" time="0.218" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="MAP" executed="True" result="Success" success="True" time="0.209" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Common" executed="True" result="Success" success="True" time="0.208" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="0.208" asserts="0">
+                    <results>
+                      <test-suite type="TestFixture" name="ForlopExtensionsTests" executed="True" result="Success" success="True" time="0.206" asserts="0">
+                        <results>
+                          <test-case name="MAP.Common.Test.ForlopExtensionsTests.TestHentDisplayText_Brystkreft" executed="True" result="Success" success="True" time="0.188" asserts="0" />
+                          <test-case name="MAP.Common.Test.ForlopExtensionsTests.TestHentDisplayText_Lungekreft" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="MAP.Common.Test.ForlopExtensionsTests.TestHentDisplayText_Prostatakreft" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                          <test-case name="MAP.Common.Test.ForlopExtensionsTests.TestHentDisplayText_TykkEndetarmskreft" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+      <test-suite type="Assembly" name="C:\Users\jukloc-he\Development\SPF\eSP\MAP.Web.Test\bin\Release\MAP.Web.Test.dll" executed="True" result="Success" success="True" time="4.301" asserts="0">
+        <results>
+          <test-suite type="Namespace" name="MAP" executed="True" result="Success" success="True" time="4.292" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Web" executed="True" result="Success" success="True" time="4.291" asserts="0">
+                <results>
+                  <test-suite type="Namespace" name="Test" executed="True" result="Success" success="True" time="4.291" asserts="0">
+                    <results>
+                      <test-suite type="Namespace" name="Authorization" executed="True" result="Success" success="True" time="2.085" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="AuthorizationManagerTests" executed="True" result="Success" success="True" time="0.316" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Authorization.AuthorizationManagerTests.AutorisererHvisPrincipalHarAlleClaim" executed="True" result="Success" success="True" time="0.296" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.AuthorizationManagerTests.AutorisererHvisPrincipalHarRettClaim" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.AuthorizationManagerTests.AutorisererIkkeHvisPrincipalIkkeHarRettClaim" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.AuthorizationManagerTests.AutorisererIkkeHvisPrincipalManglerClaimType" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.AuthorizationManagerTests.AutorisererIkkeHvisPrincipalManglerEttClaim" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="Namespace" name="Claims" executed="True" result="Success" success="True" time="1.027" asserts="0">
+                            <results>
+                              <test-suite type="TestFixture" name="Administrator" executed="True" result="Success" success="True" time="0.776" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Administrator.Administrator_KanSeAlleForløp" executed="True" result="Success" success="True" time="0.487" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Administrator.Brystkreftforløp_KanSeBrystkreft" executed="True" result="Success" success="True" time="0.012" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Administrator.Lungekreftforløp_KanSeLungekreft" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="Administrator_IngenForløp" executed="True" result="Inconclusive" success="False" time="0.001" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Administrator_IngenForløp.Administrator_HarAlleTilganger" executed="False" result="Ignored">
+                                    <reason>
+                                      <message><![CDATA[]]></message>
+                                    </reason>
+                                  </test-case>
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="Avidentifisert" executed="True" result="Success" success="True" time="0.084" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Avidentifisert.avidentifisert_Forløp_KanIkkeSeIdentifiserteData" executed="True" result="Success" success="True" time="0.013" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Avidentifisert.avidentifisert_Forløp_KanIkkeSeKonfigurasjon" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Avidentifisert.avidentifisert_Forløp_KanSeBehandler" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Avidentifisert.avidentifisert_Forløp_KanSeFiltrering" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Avidentifisert.avidentifisert_Forløp_KanSeForløp" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Avidentifisert.avidentifisert_Forløp_KanSeForside" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Avidentifisert.avidentifisert_Forløp_KanSePasientListe" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Avidentifisert.avidentifisert_Forløp_KanSeRapporter" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Avidentifisert.avidentifisert_Forløp_KanSeSøk" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Avidentifisert.avidentifisert_Forløp_KanSeTidslinje" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="AvidentifisertKategori" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.AvidentifisertKategori.Oversikt_Kategori_KanSeAlleForløpIKategori" executed="True" result="Success" success="True" time="0.011" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="Konfigurasjon" executed="True" result="Success" success="True" time="0.078" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon.konfigurasjon_Forløp_KanIkkeSeBehandler" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon.konfigurasjon_Forløp_KanIkkeSeFiltrering" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon.konfigurasjon_Forløp_KanIkkeSeForløp" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon.konfigurasjon_Forløp_KanIkkeSeIdentifiserteData" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon.konfigurasjon_Forløp_KanIkkeSePasientListe" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon.konfigurasjon_Forløp_KanIkkeSeRapporter" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon.konfigurasjon_Forløp_KanIkkeSeSøk" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon.konfigurasjon_Forløp_KanIkkeSeTidslinje" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon.konfigurasjon_Forløp_KanSeForside" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon.konfigurasjon_Forløp_KanSeKonfigurasjonside" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="Konfigurasjon_IngenForløp" executed="True" result="Success" success="True" time="0.042" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon_IngenForløp.konfigurasjon_Forløp_KanIkkeSeBehandler" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon_IngenForløp.konfigurasjon_Forløp_KanIkkeSeFiltrering" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon_IngenForløp.konfigurasjon_Forløp_KanIkkeSeForløp" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon_IngenForløp.konfigurasjon_Forløp_KanIkkeSeIdentifiserteData" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon_IngenForløp.konfigurasjon_Forløp_KanIkkeSePasientListe" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon_IngenForløp.konfigurasjon_Forløp_KanIkkeSeRapporter" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon_IngenForløp.konfigurasjon_Forløp_KanIkkeSeSøk" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon_IngenForløp.konfigurasjon_Forløp_KanIkkeSeTidslinje" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon_IngenForløp.konfigurasjon_Forløp_KanSeForside" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Konfigurasjon_IngenForløp.konfigurasjon_Forløp_KanSeKonfigurasjonside" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="Public" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Authorization.Claims.Public.Public_KanSeAlleForløp" executed="True" result="Success" success="True" time="0.010" asserts="0" />
+                                </results>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="EspAuthorizationAttributeTests" executed="True" result="Success" success="True" time="0.449" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Authorization.EspAuthorizationAttributeTests.OnActionExecuting_ForlopIdParamNameMatchingClaim_IsAuthorized" executed="True" result="Success" success="True" time="0.423" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspAuthorizationAttributeTests.OnActionExecuting_ForlopIdParamNameNotMatchingClaim_IsAuthorized" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspAuthorizationAttributeTests.OnActionExecuting_ForlopModelParamNameMatchingClaim_IsAuthorized" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspAuthorizationAttributeTests.OnActionExecuting_ForlopModelParamNameNotMatchingClaim_IsAuthorized" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspAuthorizationAttributeTests.OnActionExecuting_ForlopTypeIsEmpty_IsNotAuthorized" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspAuthorizationAttributeTests.OnActionExecuting_ForlopTypeIsNull_IsNotAuthorized" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspAuthorizationAttributeTests.OnActionExecuting_ForlopTypeParamNameMatchingClaim_IsAuthorized" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspAuthorizationAttributeTests.OnActionExecuting_ForlopTypeParamNameNotMatchingClaim_IsAuthorized" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspAuthorizationAttributeTests.OnActionExecuting_NoMathingParamName_IsNotAuthorized" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="EspClaimsfactory_IngenKonfigurerteForløpTests" executed="True" result="Inconclusive" success="False" time="0.001" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactory_IngenKonfigurerteForløpTests.OpperetterKonfigurasjonsrolle_og_eSPAdminRolle" executed="False" result="Ignored">
+                                <reason>
+                                  <message><![CDATA[]]></message>
+                                </reason>
+                              </test-case>
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="EspClaimsfactoryBegrensetRolleTests" executed="True" result="Success" success="True" time="0.143" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.BrystkreftBegrensetanSeBrystkreftForløp" executed="True" result="Success" success="True" time="0.011" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.BrystkreftBegrensetKanIkkeSeIdentifiserteData" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.BrystkreftBegrensetKanSeBehandler" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.BrystkreftBegrensetKanSeFiltrering" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.BrystkreftBegrensetKanSeForside" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.BrystkreftBegrensetKanSePasientListe" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.BrystkreftBegrensetKanSeRapporter" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.BrystkreftBegrensetKanSeSøk" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.BrystkreftBegrensetKanSeTidslinje" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.TykktarmskreftBegrensetKanIkkeSeIdentifiserteData" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.TykktarmskreftBegrensetKanSeBehandler" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.TykktarmskreftBegrensetKanSeFiltrering" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.TykktarmskreftBegrensetKanSeForside" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.TykktarmskreftBegrensetKanSePasientListe" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.TykktarmskreftBegrensetKanSeRapporter" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.TykktarmskreftBegrensetKanSeSøk" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.TykktarmskreftBegrensetKanSeTidslinje" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsfactoryBegrensetRolleTests.TykktarmskreftBegrensetKanTykktarmskreftForløp" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="EspClaimsFactoryTests" executed="True" result="Success" success="True" time="0.126" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.AdministratorIsSIngleRole" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.AdministratorKanSeAlleForløp" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.AdministratorKanSeBehandler" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.AdministratorKanSeFiltrering" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.AdministratorKanSeForside" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.AdministratorKanSePasientListe" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.AdministratorKanSeRapporter" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.AdministratorKanSeSøk" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.AdministratorKanSeTidslinje" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.AdministratorKanUtføreIdentifisering" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.OversiktKreftKanSeAlleKreftforløp" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.PublicKanIkkeSeIdentifiserteData" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.PublicKanIkkeSePasientListe" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.PublicKanIkkeSeSeBehandler" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.PublicKanIkkeSeSeFiltrering" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.PublicKanIkkeSeSøk" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.PublicKanIkkeSeTidslinje" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.PublicKanSeAlleForløp" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.PublicKanSeForside" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Authorization.EspClaimsFactoryTests.PublicKanSeRapporter" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="AutofacResolveTests" executed="True" result="Inconclusive" success="False" time="0.001" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.AutofacResolveTests.AutofacKanResolveAlleInterface" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-case>
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="Beregninger" executed="True" result="Success" success="True" time="0.625" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="BeregnAlderTests" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Beregninger.BeregnAlderTests.TestBeregnAlder_Gyldig_Fødselsnummer" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregnAlderTests.TestBeregnAlder_Ugyldig_Fødselsnummer" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="BeregnFørsteFremmøteTests" executed="True" result="Success" success="True" time="0.041" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Beregninger.BeregnFørsteFremmøteTests.BeregnerFørsteFremmøte_Ett_Forløp" executed="True" result="Success" success="True" time="0.027" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregnFørsteFremmøteTests.BeregnerFørsteFremmøte_Ett_Forløp_Samme_Dato" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregnFørsteFremmøteTests.BeregnerFørsteFremmøte_Ett_Forløp_Ulogiske_Datoer" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregnFørsteFremmøteTests.BeregnerFørsteFremmøte_Ingen_Forløp" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregnFørsteFremmøteTests.BeregnerFørsteFremmøte_Samme_Kode" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="BeregningGrunnlagUtilsTests" executed="True" result="Success" success="True" time="0.067" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningGrunnlagUtilsTests.BeregningForløpErIkkeSuspektNårKoderIPåSammeDato" executed="True" result="Success" success="True" time="0.034" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningGrunnlagUtilsTests.BeregningForløpErIkkeSuspektNårKoderIRiktigRekkefølge" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningGrunnlagUtilsTests.BeregningForløpErSuspektNårKoderFraForskjelligeForløpIFeilRekkefølge" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningGrunnlagUtilsTests.BeregningForløpErSuspektNårKoderIFeilRekkefølge" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningGrunnlagUtilsTests.BeregningForløpHensyntarHenvisningVurdertOgHenvMottatt" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningGrunnlagUtilsTests.OppdatererForlopMedDelforlopId" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningGrunnlagUtilsTests.SetterDelforløp" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="BeregningsgrunnlagFactoryTests" executed="True" result="Success" success="True" time="0.038" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningsgrunnlagFactoryTests.BenytterFørsteForekomstVedFlereAvSammeKoder" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningsgrunnlagFactoryTests.BeregningsforløpFølgerRekkefølge" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningsgrunnlagFactoryTests.FiltrererBortDuplikater_i_TransformertForløp" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningsgrunnlagFactoryTests.FjernerForløp_med_flere_registreringer_på_samme_Order_i_TransformertForløp" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningsgrunnlagFactoryTests.IgnorererKoderSomIkkeErIForløpBeskrivelse" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningsgrunnlagFactoryTests.InkludererIkkeSuspekteForløp" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningsgrunnlagFactoryTests.KanTransformere2Forløp" executed="False" result="Ignored">
+                                <reason>
+                                  <message><![CDATA[]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningsgrunnlagFactoryTests.KanTransformereForløp" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregningsgrunnlagFactoryTests.SortererTransformertForløp" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="BeregnKliniskBeslutningTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Beregninger.BeregnKliniskBeslutningTests.BeregnerFørsteFremmøte_Ett_Forløp" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.BeregnKliniskBeslutningTests.BeregnerFørsteFremmøte_Ingen_Forløp" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="DiverseBeregningerTests" executed="True" result="Success" success="True" time="0.041" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Beregninger.DiverseBeregningerTests.TestFinnAntallVirkedager_Helg_returnerer_0" executed="True" result="Success" success="True" time="0.028" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.DiverseBeregningerTests.TestFinnAntallVirkedager_SammeDag_returnerer_0" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.DiverseBeregningerTests.TestFinnAntallVirkedager_ToUkerFraMandag_returnerer_10" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.DiverseBeregningerTests.TestLeggTilVirkedager_3dager_OverHelg" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Beregninger.DiverseBeregningerTests.TestLeggTilVirkedager_3dager_OverHelligdag" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="ForlopListeTests" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                          <test-suite type="Namespace" name="FristBeregningTests" executed="True" result="Success" success="True" time="0.408" asserts="0">
+                            <results>
+                              <test-suite type="TestFixture" name="PasientForlopProviderTests" executed="True" result="Success" success="True" time="0.253" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.PasientForlopProviderTests.HenterAlleHenvisningsperioderForEnPasient" executed="True" result="Success" success="True" time="0.196" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.PasientForlopProviderTests.OppretterRHFForløpForAllePasienterMedRiktigForløpstype" executed="True" result="Success" success="True" time="0.017" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.PasientForlopProviderTests.PopulererRhfforløpPerPasient" executed="True" result="Success" success="True" time="0.017" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.PasientForlopProviderTests.SlårSammenForlopIHF" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.PasientForlopProviderTests.SlårSammenForlopPåTversAvHF" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="PasientForlopProviderTests2" executed="True" result="Success" success="True" time="0.040" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.PasientForlopProviderTests2.OppretterRHFForløpForAllePasienterMedRiktigForløpstype" executed="True" result="Success" success="True" time="0.039" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="PasientForløpFactoryTests" executed="True" result="Success" success="True" time="0.020" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.PasientForløpFactoryTests.FinnerHFOgSykehus" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.PasientForløpFactoryTests.FinnerTverrløp" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.PasientForløpFactoryTests.SlårSammenPasientForlop" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.PasientForløpFactoryTests.SlårSammenPasientForlop2" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="RHFPasientForløpTests1" executed="True" result="Success" success="True" time="0.030" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests1.TestAlleForløpIHF" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests1.TestAlleForløpIRHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests1.TestEkskluderteForløpPåSykehus" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests1.TestEkskluderteTverrløpIHF" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests1.TestEkskluderteTverrløpIRHF" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests1.TestErSykehusIntern" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests1.TestInterneForløpPerSykehus" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests1.TestSortererForløpPåHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests1.TestTverrløpIHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests1.TestTverrløpIRHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="RHFPasientForløpTests2" executed="True" result="Success" success="True" time="0.020" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests2.TestAlleForløpIHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests2.TestAlleForløpIRHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests2.TestEkskluderteForløpPåSykehus" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests2.TestEkskluderteTverrløpIHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests2.TestEkskluderteTverrløpIRHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests2.TestErSykehusIntern" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests2.TestInterneForløpPerSykehus" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests2.TestSortererForløpPåHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests2.TestTverrløpIHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests2.TestTverrløpIRHF" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="RHFPasientForløpTests3" executed="True" result="Success" success="True" time="0.018" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests3.TestAlleForløpIHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests3.TestAlleForløpIRHF" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests3.TestEkskluderteForløpPåSykehus" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests3.TestEkskluderteTverrløpIHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests3.TestEkskluderteTverrløpIRHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests3.TestErSykehusIntern" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests3.TestInterneForløpPerSykehus" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests3.TestSortererForløpPåHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests3.TestTverrløpIHF" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTests3.TestTverrløpIRHF" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="RHFPasientForløpTverrløpHF" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTverrløpHF.TestIt" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="RHFPasientForløpTverrløpRHF" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Beregninger.FristBeregningTests.RHFPasientForløpTverrløpRHF.TestIt2" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                                </results>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="EspDataFilterTests1" executed="True" result="Success" success="True" time="0.016" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.EspDataFilterTests1.Test1" executed="True" result="Success" success="True" time="0.016" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="EspDataFilterTests2" executed="True" result="Success" success="True" time="0.023" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.EspDataFilterTests2.Test1" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                          <test-case name="MAP.Web.Test.EspDataFilterTests2.Test2" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                          <test-case name="MAP.Web.Test.EspDataFilterTests2.Test3" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                          <test-case name="MAP.Web.Test.EspDataFilterTests2.Test4" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="EspDataFilterTests4" executed="True" result="Success" success="True" time="0.022" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.EspDataFilterTests4.Test1" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                          <test-case name="MAP.Web.Test.EspDataFilterTests4.Test2" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                          <test-case name="MAP.Web.Test.EspDataFilterTests4.Test3" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                          <test-case name="MAP.Web.Test.EspDataFilterTests4.Test4" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="Extensions" executed="True" result="Success" success="True" time="0.073" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="BehandlerTellerTests" executed="True" result="Success" success="True" time="0.018" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Extensions.BehandlerTellerTests.TestDiagnoseTeller_En_Behandler" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.BehandlerTellerTests.TestDiagnoseTeller_Flere_Behandlere" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.BehandlerTellerTests.TestDiagnoseTeller_IngenBehandlere" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.BehandlerTellerTests.TestDiagnoseTeller_To_Behandlere" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="DiagnoseTellerTests" executed="True" result="Success" success="True" time="0.040" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Extensions.DiagnoseTellerTests.TestDiagnoseTeller_Diagnosetype" executed="True" result="Success" success="True" time="0.024" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.DiagnoseTellerTests.TestDiagnoseTeller_En_Diagnose" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.DiagnoseTellerTests.TestDiagnoseTeller_En_Diagnose_Forskjellig_DiagnoseType" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.DiagnoseTellerTests.TestDiagnoseTeller_Flere_Diagnoser" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.DiagnoseTellerTests.TestDiagnoseTeller_IngenDiagnoser" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.DiagnoseTellerTests.TestDiagnoseTeller_To_Diagnoser" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="ProsedyreTellerTests" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Extensions.ProsedyreTellerTests.TestDiagnoseTeller_En_Diagnose" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.ProsedyreTellerTests.TestDiagnoseTeller_Flere_Prosedyrer" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.ProsedyreTellerTests.TestDiagnoseTeller_IngenDiagnoser" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Extensions.ProsedyreTellerTests.TestDiagnoseTeller_To_Diagnoser" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="Forlop" executed="True" result="Success" success="True" time="0.045" asserts="0">
+                        <results>
+                          <test-suite type="Namespace" name="StandardForlop" executed="True" result="Success" success="True" time="0.045" asserts="0">
+                            <results>
+                              <test-suite type="TestFixture" name="BehandlingsløpFactoryTests" executed="True" result="Success" success="True" time="0.042" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Forlop.StandardForlop.BehandlingsløpFactoryTests.SetterDatoPåHendelse2" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Forlop.StandardForlop.BehandlingsløpFactoryTests.SetterDatoPåHendelserIBehandlingsforløpK" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Forlop.StandardForlop.BehandlingsløpFactoryTests.SetterDatoPåHendelserIBehandlingsforløpM" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Forlop.StandardForlop.BehandlingsløpFactoryTests.SetterStartDatopåHendelse" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Forlop.StandardForlop.BehandlingsløpFactoryTests.TestAntallBehanlingsløp" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Forlop.StandardForlop.BehandlingsløpFactoryTests.TestForlopHendelser" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Forlop.StandardForlop.BehandlingsløpFactoryTests.TestForlopHendelser2" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="LungekreftByggerTests" executed="False" result="Ignored">
+                                <reason>
+                                  <message><![CDATA[]]></message>
+                                </reason>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="ForlopBeskrivelser" executed="True" result="Success" success="True" time="0.415" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="ForlopBeskrivelseModelFactoryTests" executed="True" result="Success" success="True" time="0.037" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseModelFactoryTests.AvidentifisertRolle" executed="True" result="Success" success="True" time="0.011" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseModelFactoryTests.Delforlop" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseModelFactoryTests.ForlopRolle" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseModelFactoryTests.Frister" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseModelFactoryTests.Inklusjonskoder" executed="True" result="Success" success="True" time="0.011" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseModelFactoryTests.Kategori" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseModelFactoryTests.Navn" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseModelFactoryTests.PakkeforlopNummer" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseModelFactoryTests.Steg" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="ForlopBeskrivelseValidatorTests" executed="True" result="Success" success="True" time="0.048" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseValidatorTests.KreverAtNavnIkkeEksisterer" executed="True" result="Success" success="True" time="0.014" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseValidatorTests.KreverAtPakkeforløpNummerIkkeEksisterer" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseValidatorTests.KreverForløpRolleNavn" executed="False" result="Ignored">
+                                <reason>
+                                  <message><![CDATA[Hvorfor skal vi sette rolle?]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseValidatorTests.KreverKategori" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseValidatorTests.KreverNavn" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopBeskrivelseValidatorTests.KreverPakkeforløpNummer" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="ForlopByggerTests" executed="True" result="Success" success="True" time="0.324" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.ForlopBeskrivelser.ForlopByggerTests.SerialiserJson" executed="True" result="Success" success="True" time="0.324" asserts="0" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="ForlopMatcherTests" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.ForlopMatcherTests.SomethingElse" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                          <test-case name="MAP.Web.Test.ForlopMatcherTests.TestMatching" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                          <test-case name="MAP.Web.Test.ForlopMatcherTests.TestMatchingFeilInput" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="ForlopOppdatererTests" executed="True" result="Success" success="True" time="0.027" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.ForlopOppdatererTests.BrukerKun_1_Oppdatering_perPasient" executed="True" result="Success" success="True" time="0.012" asserts="0" />
+                          <test-case name="MAP.Web.Test.ForlopOppdatererTests.KasterExceptionHvisFlereForløpTyperIOppdateringer" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                          <test-case name="MAP.Web.Test.ForlopOppdatererTests.KasterExceptionHvisForløpTypeMangler" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                          <test-case name="MAP.Web.Test.ForlopOppdatererTests.KasterExceptionHvisPasienterIkkeErMed" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                          <test-case name="MAP.Web.Test.ForlopOppdatererTests.OppdatererAlleForlopAvAngittTypeForPasient" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                          <test-case name="MAP.Web.Test.ForlopOppdatererTests.ReturnererIkkeForløpUtenOppdateringer" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="ForløpRydderTests" executed="True" result="Success" success="True" time="0.001" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.ForløpRydderTests.FjernerProsedyrekoderFraAndreForløp" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="Grafer" executed="True" result="Success" success="True" time="0.100" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="HighchartColorGeneratorTests" executed="True" result="Success" success="True" time="0.013" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Grafer.HighchartColorGeneratorTests.GenererHighchartColor_index_1_Returnerer_farge_1" executed="True" result="Success" success="True" time="0.006" asserts="1" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartColorGeneratorTests.GenererHighchartColor_index_1012_Returnerer_farge_2" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartColorGeneratorTests.GenererHighchartColor_index_StørreEnnHighchartColorsCount_Returnerer_farge_0" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartColorGeneratorTests.GenererHighchartColor_Minus_1_Returnerer_farge_1" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartColorGeneratorTests.GenererHighchartColor_Null_Returnerer_farge_0" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="HighchartTekstForkorterTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Grafer.HighchartTekstForkorterTests.TestTekstForkorter_For" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartTekstForkorterTests.TestTekstForkorter_Maks4" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartTekstForkorterTests.TestTekstForkorter_Maks6" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartTekstForkorterTests.TestTekstForkorter_Og" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="HighchartTooltipGeneratorTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Grafer.HighchartTooltipGeneratorTests.TestHighchartTooltipGenerator_KortStreng" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartTooltipGeneratorTests.TestHighchartTooltipGenerator_LangStreng" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartTooltipGeneratorTests.TestHighchartTooltipGenerator_LangStreng_LitenLengde" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartTooltipGeneratorTests.TestHighchartTooltipGenerator_T81_0" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                              <test-case name="MAP.Web.Test.Grafer.HighchartTooltipGeneratorTests.TestHighchartTooltipGenerator_TomStreng" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="Namespace" name="Konfig" executed="True" result="Success" success="True" time="0.060" asserts="0">
+                            <results>
+                              <test-suite type="TestFixture" name="HistorikkNøkkeltallGrafTests" executed="True" result="Success" success="True" time="0.015" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Grafer.Konfig.HistorikkNøkkeltallGrafTests.Test_Ingen_BeregningsResultat" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Grafer.Konfig.HistorikkNøkkeltallGrafTests.Test_Med_BeregningsResultat" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                                </results>
+                              </test-suite>
+                              <test-suite type="TestFixture" name="NøkkeltallGrafTests" executed="True" result="Success" success="True" time="0.043" asserts="0">
+                                <results>
+                                  <test-case name="MAP.Web.Test.Grafer.Konfig.NøkkeltallGrafTests.TestEttNivåNøkkeltall_Returnerer_To_Nivå_Drilldown" executed="True" result="Success" success="True" time="0.019" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Grafer.Konfig.NøkkeltallGrafTests.TestIngenNøkkeltall_Returnerer_Tom_Graf" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Grafer.Konfig.NøkkeltallGrafTests.TestToNivåNøkkeltall_Returnerer_To_Nivå_Drilldown" executed="True" result="Success" success="True" time="0.011" asserts="0" />
+                                  <test-case name="MAP.Web.Test.Grafer.Konfig.NøkkeltallGrafTests.TestTreNivåNøkkeltall_Returnerer_Tre_Nivå_Drilldown" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                                </results>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="NokkeltallBeskrivelseGrafTests" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="HendelseSortererPåTidStigendeTests" executed="True" result="Success" success="True" time="0.006" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.HendelseSortererPåTidStigendeTests.HensyntarHendelseTypePlanlagtInn" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                          <test-case name="MAP.Web.Test.HendelseSortererPåTidStigendeTests.Returnerer_0_Når_Tid_er_Lik" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                          <test-case name="MAP.Web.Test.HendelseSortererPåTidStigendeTests.SortererPåTid" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="Indikatorer" executed="True" result="Success" success="True" time="0.083" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="IndikatorBeregningForPasientTests" executed="True" result="Success" success="True" time="0.042" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorBeregningForPasientTests.Test_Pasient_Mangler_PakkeStart_Har_KliniskBeslutning" executed="True" result="Success" success="True" time="0.028" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorBeregningForPasientTests.TestEnIndikator_PasientMedIndikatorkoder" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorBeregningForPasientTests.TestEnIndikator_PasientMedPakkeIndikatorkoder" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorBeregningForPasientTests.TestEnIndikator_PasientUtenIndikatorkoder" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorBeregningForPasientTests.TestIngenIndikatorer" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorBeregningForPasientTests.TestPasientMedFraHendelseIndikatorer" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="IndikatorEvalueringTestsAsc" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorEvalueringTestsAsc.EvaluererTilGultHvisVerdiErMellomGrenseverdierForRødOgGrønn" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="IndikatormodelFactoryTests" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[PoC Indikatorer]]></message>
+                            </reason>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="IndikatorTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorTests.HentNormalisertVerdiGronn" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorTests.HentNormalisertVerdiGul" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorTests.HentNormalisertVerdiRod" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.IndikatorTests.SetterVektOgGrenseverdier" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="UberIndikatorTests" executed="True" result="Success" success="True" time="0.023" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Indikatorer.UberIndikatorTests.HentNormalisertVerdiGul" executed="True" result="Success" success="True" time="0.012" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.UberIndikatorTests.HentNormalisertVerdiGulVektet" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.UberIndikatorTests.HentNormalisertVerdiRodVektet" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.UberIndikatorTests.HentNormalisertVerdiVektet" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.UberIndikatorTests.HentNormalisertVerdiVektet2" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.UberIndikatorTests.HentNormalisertVerdiVektet3" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Indikatorer.UberIndikatorTests.SetterVektOgGrenseverdier" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="Mapping" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="HendelseKategoriMapperTests" executed="True" result="Success" success="True" time="0.002" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Mapping.HendelseKategoriMapperTests.MApperOperasjonTilOperasjon" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="HendelseMappingTest" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Mapping.HendelseMappingTest.MapperHendelseTilDomeneModel" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="NøkkeltallBeregninger" executed="True" result="Success" success="True" time="0.098" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="AggregeringKategorierOgPaskoderTests2" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="AggregeringKategorierTests" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="AggregeringKategorierTests2" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                          <test-suite type="TestFixture" name="AggregeringMedForlopBeskrivelseTests" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="AggregeringMedForlopBeskrivelseTests2" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="AggregeringTests" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="AggregeringTests2" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="FirstBeregningPasienterUtenforTests" executed="True" result="Success" success="True" time="0.053" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.NøkkeltallBeregninger.FirstBeregningPasienterUtenforTests.BeregnTidsintervallMellomHendelserInnenforOgUtenforFrist" executed="True" result="Success" success="True" time="0.053" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="FirstBeregningPasienterUtenH2Tests" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.NøkkeltallBeregninger.FirstBeregningPasienterUtenH2Tests.BeregnMedPasienterUtenH2" executed="True" result="Success" success="True" time="0.010" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="FristBeregningScopeTests" executed="True" result="Success" success="True" time="0.003" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.NøkkeltallBeregninger.FristBeregningScopeTests.FinnerGrunnlagMedGittSteg" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="FristberegningTests" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.NøkkeltallBeregninger.FristberegningTests.BeregnTidsintervallMellomHendelser" executed="True" result="Success" success="True" time="0.010" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="Namespace" name="V2" executed="True" result="Inconclusive" success="False" time="0.005" asserts="0">
+                            <results>
+                              <test-suite type="TestFixture" name="NøkkeltallberegningTests2" executed="False" result="Ignored">
+                                <reason>
+                                  <message><![CDATA[]]></message>
+                                </reason>
+                                <results>
+                                  <test-case name="MAP.Web.Test.NøkkeltallBeregninger.V2.NøkkeltallberegningTests2.AntallForlopIGrunnlag" executed="False" result="Ignored">
+                                    <reason>
+                                      <message><![CDATA[]]></message>
+                                    </reason>
+                                  </test-case>
+                                  <test-case name="MAP.Web.Test.NøkkeltallBeregninger.V2.NøkkeltallberegningTests2.AntallPasienter" executed="False" result="Ignored">
+                                    <reason>
+                                      <message><![CDATA[]]></message>
+                                    </reason>
+                                  </test-case>
+                                  <test-case name="MAP.Web.Test.NøkkeltallBeregninger.V2.NøkkeltallberegningTests2.Beregningsdato" executed="False" result="Ignored">
+                                    <reason>
+                                      <message><![CDATA[]]></message>
+                                    </reason>
+                                  </test-case>
+                                  <test-case name="MAP.Web.Test.NøkkeltallBeregninger.V2.NøkkeltallberegningTests2.EttResultat" executed="False" result="Ignored">
+                                    <reason>
+                                      <message><![CDATA[]]></message>
+                                    </reason>
+                                  </test-case>
+                                  <test-case name="MAP.Web.Test.NøkkeltallBeregninger.V2.NøkkeltallberegningTests2.PasientAndel" executed="False" result="Ignored">
+                                    <reason>
+                                      <message><![CDATA[]]></message>
+                                    </reason>
+                                  </test-case>
+                                </results>
+                              </test-suite>
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="Rapporter" executed="True" result="Success" success="True" time="0.296" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="AldersFordelingTests" executed="True" result="Success" success="True" time="0.013" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.AldersFordelingTests.Test_En_Pasient_Pasienter" executed="True" result="Success" success="True" time="0.010" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.AldersFordelingTests.Test_Ingen_Pasienter" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="AndelStandardforlopCollectionTests" executed="True" result="Success" success="True" time="0.028" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.AndelStandardforlopCollectionTests.Test_En_Pasient_Ett_År_Innen_Frist" executed="True" result="Success" success="True" time="0.019" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.AndelStandardforlopCollectionTests.Test_Ingen_Pasienter" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.AndelStandardforlopCollectionTests.Test_To_Pasienter_En_Avvikende_Registrering" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.AndelStandardforlopCollectionTests.Test_To_Pasienter_Ett_År_Innen__Utenfor_Frist" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="AndelStandardforlopTests" executed="True" result="Success" success="True" time="0.018" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.AndelStandardforlopTests.Test_En_Pasient_Ett_År_Innen_Frist" executed="True" result="Success" success="True" time="0.009" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.AndelStandardforlopTests.Test_Ingen_Pasienter" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.AndelStandardforlopTests.Test_To_Pasienter_En_Avvikende_Registrering" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.AndelStandardforlopTests.Test_To_Pasienter_Ett_År_Innen__Utenfor_Frist" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="DatadumpTests" executed="True" result="Success" success="True" time="0.025" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.DatadumpTests.Test_Aktive_Pasienter" executed="True" result="Success" success="True" time="0.007" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.DatadumpTests.Test_Alle_Pasienter_A01CK_En_Med_Indikator" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.DatadumpTests.Test_Ekskluderte_Pasienter" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.DatadumpTests.Test_Flere_Koder_Flere_Pasienter" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.DatadumpTests.Test_Fra_Dato_Pasienter" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.DatadumpTests.Test_Fra_Til_Dato_Pasienter" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.DatadumpTests.Test_Ingen_Model_Ingen_Pasienter_Retunerer_Ingen" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.DatadumpTests.Test_Ingen_Model_Retunerer_Ingen" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="HistorikkBoxplotTests" executed="True" result="Success" success="True" time="0.028" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.HistorikkBoxplotTests.En_Pasient" executed="True" result="Success" success="True" time="0.024" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.HistorikkBoxplotTests.Flere_Pasienter" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.HistorikkBoxplotTests.Ingen_Pasienter" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="InfeksjonRapporterTests" executed="True" result="Success" success="True" time="0.007" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.InfeksjonRapporterTests.TestProsentNøkkeltall_IngenNøkkeltall_Returnerer_IngenData" executed="True" result="Success" success="True" time="0.006" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="KjonnsFordelingTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.KjonnsFordelingTests.Test_En_Pasient_Pasienter" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.KjonnsFordelingTests.Test_Ingen_Pasienter" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="KomplikasjonRapporterTests" executed="True" result="Success" success="True" time="0.005" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.KomplikasjonRapporterTests.TestProsentNøkkeltall_IngenNøkkeltall_Returnerer_IngenData" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="NøkkeltallRapporterTests" executed="True" result="Success" success="True" time="0.043" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.NøkkeltallRapporterTests.TestNøkkeltallTrend" executed="True" result="Success" success="True" time="0.020" asserts="6" />
+                              <test-case name="MAP.Web.Test.Rapporter.NøkkeltallRapporterTests.TestNøkkeltallTrend_Flere_Delforløp" executed="True" result="Success" success="True" time="0.003" asserts="3" />
+                              <test-case name="MAP.Web.Test.Rapporter.NøkkeltallRapporterTests.TestNøkkeltallTrend_Ingen_Data" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.NøkkeltallRapporterTests.TestProsentNøkkeltall_EttNøkkeltall_Returnerer_DataMedNøkkeltall" executed="True" result="Success" success="True" time="0.007" asserts="4" />
+                              <test-case name="MAP.Web.Test.Rapporter.NøkkeltallRapporterTests.TestProsentNøkkeltall_IngenNøkkeltall_Returnerer_IngenData" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="MAP.Web.Test.Rapporter.NøkkeltallRapporterTests.TestProsentNøkkeltall_ToNøkkeltall_Returnerer_DataMedNøkkeltall" executed="True" result="Success" success="True" time="0.003" asserts="8" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="RapportGeneratorUtilitiesTests" executed="True" result="Success" success="True" time="0.011" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.RapportGeneratorUtilitiesTests.TestBoxplot_0" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.RapportGeneratorUtilitiesTests.TestBoxplot_Control_Outliers" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.RapportGeneratorUtilitiesTests.TestBoxplot_En" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.RapportGeneratorUtilitiesTests.TestBoxplot_To" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="TvangsVedtakTests" executed="True" result="Success" success="True" time="0.036" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.TvangsVedtakTests.TestTvangsVedtakGraf_En_Pasient_Ett_Vedtak" executed="True" result="Success" success="True" time="0.023" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.TvangsVedtakTests.TestTvangsVedtakGraf_En_Pasient_Ingen_Vedtak" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.TvangsVedtakTests.TestTvangsVedtakGraf_Flere_Pasienter_Flere_Vedtak" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Rapporter.TvangsVedtakTests.TestTvangsVedtakGraf_Ingen_Pasienter" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="VentetidTilProsedyreTests" executed="True" result="Success" success="True" time="0.038" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.VentetidTilProsedyreTests.TestVentetidTilColonoskopi_EttForlopMedColonoskopiProsedyre_10dag_returnerer_7_1" executed="True" result="Success" success="True" time="0.021" asserts="2" />
+                              <test-case name="MAP.Web.Test.Rapporter.VentetidTilProsedyreTests.TestVentetidTilColonoskopi_EttForlopMedColonoskopiProsedyre_1dag_returnerer_1_1" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                              <test-case name="MAP.Web.Test.Rapporter.VentetidTilProsedyreTests.TestVentetidTilColonoskopi_EttForlopUtenColonoskopiProsedyre_1dag_returnerer_null" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+                              <test-case name="MAP.Web.Test.Rapporter.VentetidTilProsedyreTests.TestVentetidTilColonoskopi_IngenForlop_Returnerer_Ingen" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="MAP.Web.Test.Rapporter.VentetidTilProsedyreTests.TestVentetidTilColonoskopi_ToForlopMedColonoskopiProsedyre_1dag_2dag_returnerer_1_1_2_1" executed="True" result="Success" success="True" time="0.008" asserts="4" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="VurdereHenvisningTests" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Rapporter.VurdereHenvisningTests.TestVurdereHenvisningNormalfordeling_EttForlop_1dag_returnerer_1_1" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                              <test-case name="MAP.Web.Test.Rapporter.VurdereHenvisningTests.TestVurdereHenvisningNormalfordeling_IngenForlop_Returnerer_Ingen" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                              <test-case name="MAP.Web.Test.Rapporter.VurdereHenvisningTests.TestVurdereHenvisningNormalfordeling_ToForlop_1dag_1Uten_returnerer_1_1" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+                              <test-case name="MAP.Web.Test.Rapporter.VurdereHenvisningTests.TestVurdereHenvisningNormalfordeling_ToForlop_1dag_2dag_returnerer_1_1_2_1" executed="True" result="Success" success="True" time="0.002" asserts="4" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="Services" executed="True" result="Success" success="True" time="0.020" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="EkskluderingTests" executed="True" result="Success" success="True" time="0.020" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Services.EkskluderingTests.EkskludererForløpMedCA" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                              <test-case name="MAP.Web.Test.Services.EkskluderingTests.EkskludererForløpMedCI" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                              <test-case name="MAP.Web.Test.Services.EkskluderingTests.EkskludererForløpMedCM" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Services.EkskluderingTests.EkskludererForløpMedDeltHenvisningsperiode" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Services.EkskluderingTests.EkskludererForløpMedX" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Services.EkskluderingTests.EkskludererIkkeForløpMedEksklusjonskoderFraAndreForløp" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                            </results>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="Tidslinje" executed="True" result="Success" success="True" time="0.177" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="HendelserSerieTests" executed="True" result="Success" success="True" time="0.082" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Tidslinje.HendelserSerieTests.Flere_Hendelser_Ett_Sykehus" executed="True" result="Success" success="True" time="0.050" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.HendelserSerieTests.Flere_Hendelser_Samme_Dato_Samme_Sted_Ett_Sykehus" executed="True" result="Success" success="True" time="0.008" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.HendelserSerieTests.Flere_Hendelser_Samme_Sted_Og_Dato_Flere_Sykehus" executed="True" result="Success" success="True" time="0.013" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.HendelserSerieTests.Ingen_Hendelser" executed="True" result="Success" success="True" time="0.006" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="IndikatorSerieTests" executed="True" result="Success" success="True" time="0.037" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Tidslinje.IndikatorSerieTests.Flere_Hendelser__Flere_Sykehus" executed="True" result="Success" success="True" time="0.018" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.IndikatorSerieTests.Flere_Hendelser_Ett_Sykehus" executed="True" result="Success" success="True" time="0.010" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.IndikatorSerieTests.Ingen_Hendelser" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="PasientforlopSerieTests" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="PlanlagtInnSerieTests" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="StandardForløpSerierTests" executed="True" result="Success" success="True" time="0.001" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Tidslinje.StandardForløpSerierTests.Test_Aktiv_Behandlingslop" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="TidslinjeUtilitiesTests" executed="True" result="Success" success="True" time="0.013" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Tidslinje.TidslinjeUtilitiesTests.TestDiagnoseLabel" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.TidslinjeUtilitiesTests.TestDiagnoseLabel_Behandling" executed="False" result="Ignored">
+                                <reason>
+                                  <message><![CDATA[]]></message>
+                                </reason>
+                              </test-case>
+                              <test-case name="MAP.Web.Test.Tidslinje.TidslinjeUtilitiesTests.TestDiagnoseLabel_Default" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.TidslinjeUtilitiesTests.TestDiagnoseLabel_Henvisning" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.TidslinjeUtilitiesTests.TestDiagnoseLabel_Hoveddiagnose" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.TidslinjeUtilitiesTests.TestDiagnoseLabel_Komplikasjon" executed="True" result="Success" success="True" time="0.000" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="XrangeSerieTests" executed="True" result="Success" success="True" time="0.029" asserts="0">
+                            <results>
+                              <test-case name="MAP.Web.Test.Tidslinje.XrangeSerieTests.Har_Flere" executed="True" result="Success" success="True" time="0.015" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.XrangeSerieTests.Har_Vurdering" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.XrangeSerieTests.Har_Vurdering_En_Innleggelse" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.XrangeSerieTests.Ingen_Vurdering" executed="True" result="Success" success="True" time="0.001" asserts="0" />
+                              <test-case name="MAP.Web.Test.Tidslinje.XrangeSerieTests.Ingen_Vurdering_En_Innleggelse" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                            </results>
+                          </test-suite>
+                          <test-suite type="TestFixture" name="YAxisTests" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="UserContextTests1" executed="True" result="Success" success="True" time="0.024" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.UserContextTests1.TestHfNivå" executed="True" result="Success" success="True" time="0.014" asserts="0" />
+                          <test-case name="MAP.Web.Test.UserContextTests1.TestRhfNivå" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                          <test-case name="MAP.Web.Test.UserContextTests1.TestSykehusNivå" executed="True" result="Success" success="True" time="0.003" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="UserContextTests2" executed="True" result="Success" success="True" time="0.012" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.UserContextTests2.TestHfNivå" executed="True" result="Success" success="True" time="0.005" asserts="0" />
+                          <test-case name="MAP.Web.Test.UserContextTests2.TestRhfNivå" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                          <test-case name="MAP.Web.Test.UserContextTests2.TestSykehusNivå" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="TestFixture" name="UserContextTests3" executed="True" result="Success" success="True" time="0.010" asserts="0">
+                        <results>
+                          <test-case name="MAP.Web.Test.UserContextTests3.TestHfNivå" executed="True" result="Success" success="True" time="0.004" asserts="0" />
+                          <test-case name="MAP.Web.Test.UserContextTests3.TestRhfNivå" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                          <test-case name="MAP.Web.Test.UserContextTests3.TestSykehusNivå" executed="True" result="Success" success="True" time="0.002" asserts="0" />
+                        </results>
+                      </test-suite>
+                      <test-suite type="Namespace" name="ViewFactoryTests" executed="True" result="Inconclusive" success="False" time="0.001" asserts="0">
+                        <results>
+                          <test-suite type="TestFixture" name="ForløpModelFactoryTests" executed="False" result="Ignored">
+                            <reason>
+                              <message><![CDATA[]]></message>
+                            </reason>
+                          </test-suite>
+                        </results>
+                      </test-suite>
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>
