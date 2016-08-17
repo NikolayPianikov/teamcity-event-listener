@@ -268,11 +268,17 @@ Examples:
 	| Version40        |
 
 @teamcity
-Scenario Outline: NUnit sends TeamCity's service messages
+Scenario Outline: NUnit sends TeamCity's service messages for code page for NUnit2
 	Given Framework version is <frameworkVersion>
-	And I have created assemblies according to ..\..\..\testsData\TestResult1.xml in the folder mocks
 	And I have created the folder mocks
+	And I have copied the reference ..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll to folder mocks	
+	And I have created assemblies according to ..\..\..\testsData\TestResult1.xml
+	And I have added the reference ..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll to MAP.Common.Test
+	And I have compiled the assembly MAP.Common.Test to file mocks\MAP.Common.Test.dll
+	And I have added the reference ..\..\packages\NUnit.2.6.4\lib\nunit.framework.dll to MAP.Web.Test
+	And I have compiled the assembly MAP.Web.Test to file mocks\MAP.Web.Test.dll
 	And I have added the assembly mocks\MAP.Common.Test.dll to the list of testing assemblies
+	And I have added the assembly mocks\MAP.Web.Test.dll to the list of testing assemblies	
 	And I want to use CmdArguments type of TeamCity integration
 	When I run NUnit console
 	Then the exit code should be 0

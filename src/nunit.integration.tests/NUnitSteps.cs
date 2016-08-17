@@ -308,44 +308,76 @@
             }
         }
 
-        [Given(@"I have created assemblies according to (.+) in the folder (.+)")]
-        public void CreateAssemblies(string xmlReportFileName, string targetDirectoryName)
+        [Given(@"I have created assemblies according to (.+)")]
+        public void CreateAssemblies(string xmlReportFileName)
         {
             var ctx = ScenarioContext.Current.GetTestContext();
-            var configuration = ctx.GetOrCreateNUnitConfiguration();
             xmlReportFileName = Path.Combine(ctx.SandboxPath, xmlReportFileName);
-            targetDirectoryName = Path.Combine(ctx.SandboxPath, targetDirectoryName);
 
             using (var xmlReportFile = File.OpenRead(xmlReportFileName))
             {
                 var doc = XDocument.Load(xmlReportFile);
-                var a =
-                    from assemblyElement in doc.XPathSelectElements("//test-suite[@type='Assembly' and @name]")
-                    let assemblyName = Path.GetFileName(assemblyElement.Attribute("name").Value)
-                    from testFixtureElement in assemblyElement.XPathSelectElements(".//test-suite[@type='TestFixture' and @name]")
-                    let namespaceStr = GetNamespace(testFixtureElement)
-                    let зфк = GetNamespace(testFixtureElement)
-                    select assemblyName;
 
-                var b = a.ToList();
+                var tests =
+                    from assemblyElement in doc.XPathSelectElements("//test-suite[@type='Assembly' and @name]")
+                    let assemblyName = Path.GetFileNameWithoutExtension(assemblyElement.Attribute("name").Value)
+                    from testFixtureElement in assemblyElement.XPathSelectElements(".//test-suite[@type='TestFixture' and @name]")
+                    let testFixtureName = testFixtureElement.Attribute("name").Value
+                    let testFixtureNamespace = string.Join(".", GetNamespaces(testFixtureElement).Reverse())
+                    let testFixtureFullName = string.Join(".", Enumerable.Repeat(testFixtureNamespace, 1).Concat(Enumerable.Repeat(testFixtureName, 1)).Where(i => !string.IsNullOrWhiteSpace(i)))
+                    from testElement in testFixtureElement.XPathSelectElements(".//test-case[@name]")
+                    let fullTestName = testElement.Attribute("name").Value
+                    where fullTestName.Length > testFixtureFullName.Length + 1
+                    let testName = fullTestName.Substring(testFixtureFullName.Length + 1, fullTestName.Length - testFixtureFullName.Length - 1)
+                    let result = testElement.Attribute("result")?.Value ?? string.Empty
+                    select new { testName, testFixtureNamespace, testFixtureFullName, assemblyName, result };
+
+                foreach (var test in tests)
+                {
+                    switch (test.result.ToLowerInvariant())
+                    {
+                        case "success":
+                            AddMethod("Successful", test.testName, test.testFixtureNamespace, test.testFixtureFullName, test.assemblyName);
+                            break;
+
+                        case "inconclusive":
+                            AddMethod("Inconclusive", test.testName, test.testFixtureNamespace, test.testFixtureFullName, test.assemblyName);
+                            break;
+
+                        case "ignored":
+                            AddMethod("Ignored", test.testName, test.testFixtureNamespace, test.testFixtureFullName, test.assemblyName);
+                            break;
+
+                        case "failed":
+                            AddMethod("Failed", test.testName, test.testFixtureNamespace, test.testFixtureFullName, test.assemblyName);
+                            break;
+                    }
+                }
             }
         }
 
-        private IEnumerable<string> GetNamespace(XElement testFixtureElement)
+        private static IEnumerable<string> GetNamespaces(XElement element)
         {
-            var parent = testFixtureElement.Parent;
-            if (parent == null)
+            if (element == null)
             {
                 yield break;
             }
 
-            if (parent.Name == "test-suite")
+            if (element.Name == "test-suite" && StringComparer.InvariantCultureIgnoreCase.Equals(element.Attribute("type")?.Value ?? string.Empty, "Namespace"))
             {
-                
+                yield return element.Attribute("name")?.Value ?? string.Empty;
             }
 
-            var parent = testFixtureElement.XPathSelectElement("parent::parent::test-suite[@type='Namespace' and @name]");
-            return "";
+            if (element.Parent == null)
+            {
+                yield break;
+            }
+
+            var parentNs = GetNamespaces(element.Parent).ToList();
+            foreach (var parentNamespace in parentNs)
+            {
+                yield return parentNamespace;
+            }
         }
     }
 }
