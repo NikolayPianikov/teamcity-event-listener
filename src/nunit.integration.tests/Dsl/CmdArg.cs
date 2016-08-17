@@ -45,6 +45,9 @@
                         case DataType.TestList:
                             return $"--testlist={_value}";
 
+                        case DataType.TestNameFormat:
+                            return $"--test-name-format={_value}";
+
                         default:
                             throw new NotSupportedException(_argType.ToString());
                     }

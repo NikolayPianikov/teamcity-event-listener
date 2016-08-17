@@ -29,6 +29,36 @@ Examples:
 	| frameworkVersion |
 	| Version45        |
 	| Version40        |
+
+@teamcity
+Scenario Outline: User can override name of tests
+	Given Framework version is <frameworkVersion>	
+	And I have added successful method as SuccessfulTest to the class Foo.Tests.UnitTests1 for foo.tests
+	And I have added SuccessfulWithCases method as SuccessfulTestWithCases to the class Foo.Tests.UnitTests1 for foo.tests	
+	And I have created the folder mocks
+	And I have added NUnit framework references to foo.tests
+	And I have copied NUnit framework references to folder mocks
+	And I have compiled the assembly foo.tests to file mocks\foo.tests.dll	
+	And I have added the assembly mocks\foo.tests.dll to the list of testing assemblies
+	And I want to use CmdArguments type of TeamCity integration
+	#And I have added the arg TestNameFormat={m}_aaaa to NUnit console command line	
+	When I run NUnit console
+	Then the exit code should be 0
+	And the output should contain TeamCity service messages:
+	|                   | name                | captureStandardOutput | duration | flowId | parent | message | details | out    | tc:tags                       |
+	| testSuiteStarted  | foo.tests.dll       |                       |          | .+     |        |         |         |        |                               |
+	| flowStarted       |                     |                       |          | .+     | .+     |         |         |        |                               |
+	| testStarted       | ^SuccessfulTest_aaa | false                 |          | .+     |        |         |         |        |                               |
+	| testStdOut        | ^SuccessfulTest_aaa |                       |          | .+     |        |         |         | output | tc:parseServiceMessagesInside |
+	| testFinished      | ^SuccessfulTest_aaa |                       | \d+      | .+     |        |         |         |        |                               |
+	| flowFinished      |                     |                       |          | .+     |        |         |         |        |                               |
+	| testSuiteFinished | foo.tests.dll       |                       |          | .+     |        |         |         |        |                               |
+
+Examples:
+	| frameworkVersion |
+	| Version45        |
+	| Version40        |
+
 	
 @teamcity
 Scenario Outline: NUnit sends TeamCity's service messages when I run it for different types of tests

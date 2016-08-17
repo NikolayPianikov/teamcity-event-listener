@@ -36,6 +36,14 @@
         }
 
         [Test]
+        [TestCase("Case1")]
+        [TestCase("Case2")]
+        public void SuccessfulWithCases(string caseName)
+        {
+            System.Console.Write("output");
+        }
+
+        [Test]
         public void Failed()
         {
             Assert.Fail("Reason");
